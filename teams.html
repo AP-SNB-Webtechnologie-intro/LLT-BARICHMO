@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .navbar-nav .nav-link {
+        margin-right: 20px; 
+    }
+
+    .dropdown-menu a {
+        padding: 3px 10px; 
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Concept</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Drivers</a>
+                <ul class="dropdown-menu multi-column" style="width: 310px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <li><a class="dropdown-item" href="drivers.html">Max Verstappen</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Sergio Perez</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Lewis Hamilton</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Fernando Alonso</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Carlos Sainz</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Charles Leclerc</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Lando Norris</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">George Russell</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Oscar Piastri</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Lance Stroll</a></li>
+                        </div>
+                        <div class="col-md-6" style="border-left: 1px solid #474646;">
+                            <li><a class="dropdown-item" href="drivers.html">Pierre Gasly</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Esteban Ocon</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Alexander Albon</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Valtteri Bottas</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Nico Hulkenberg</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Zhou Guanyu</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Yuki Tsunoda</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Kevin Magnussen</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Logan Sargeant</a></li>
+                            <li><a class="dropdown-item" href="drivers.html">Daniel Ricciardo</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                  <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Teams</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./teams.html#Team 1">Red Bull Racing </a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team 2">Mercedes</a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team 3">Ferrari </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 4">Aston Martin </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 5">Mclaren </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 6">Alpine </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 7">Williams </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 8">Alfa Romeo </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 9">Haas F1 Team </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team 10">Alpha Tauri </a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./circuits.html">Circuits</a>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+              <button class="btn btn-sm btn-outline-secondary" type="submit" style="color: rgb(227, 222, 222);">zoeken</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <header class="m-5">  
+        <h1 class="display-3 text-danger text-uppercase fw-bolder fst-italic text-center">F1 Teams 2023</h1>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="./Team Foto's/Red-Bull Team.avif" class="card-img-top" alt="Team 1" id="Team 1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h2 class="card-title mb-0"><strong>Red Bull Racing</strong></h2>
+              <img src="./Team Foto's/logo redd bull.avif" alt="Red Bull Racing Logo Small" width="10%">
+            </div>
+            <div class="card-footer">
+              <p class="card-text"><strong>6x Wereldkampioen</strong></p>
+            </div>
+          </div>
+        </div>
+    
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./Team Foto's/Mercedes Team.avif" class="card-img-top" alt="Team 2" id="Team 2">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h2 class="card-title mb-0"><strong>Mercedes AMG Petronas</strong></h2>
+                  <img src="./Team Foto's/logo mercedes.avif" alt="Logo Small" width="10%">
+                </div>
+                <div class="card-footer">
+                  <p class="card-text"><strong>8x Wereldkampioen</strong></p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="card">
+                    <img src="./Team Foto's/Ferrari Team.avif" class="card-img-top" alt="Team 3" id="Team 3">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <h2 class="card-title mb-0"><strong>Scuderia Ferrari</strong></h2>
+                      <img src="./Team Foto's/logo ferrari.avif" alt="Logo Small" width="10%">
+                    </div>
+                    <div class="card-footer">
+                      <p class="card-text"><strong>16x Wereldkampioen</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <div class="card">
+                    <img src="./Team Foto's/McLaren Team.avif" class="card-img-top" alt="Team 4" id="Team 4">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <h2 class="card-title mb-0"><strong>McLaren</strong></h2>
+                      <img src="./Team Foto's/logo mclaren.avif" alt="Logo Small" width="10%">
+                    </div>
+                    <div class="card-footer">
+                      <p class="card-text"><strong>8x Wereldkampioen</strong></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <img src="./Team Foto's/Alpine Team.avif" class="card-img-top" alt="Team 5" id="Team 5">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                          <h2 class="card-title mb-0"><strong>BWT Alpine F1 Team</strong></h2>
+                          <img src="./Team Foto's/logo alpine.avif" alt="Logo Small" width="10%">
+                        </div>
+                        <div class="card-footer">
+                          <p class="card-text"><strong>2x Wereldkampioen</strong></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <img src="./Team Foto's/Aston Martin Team.avif" class="card-img-top" alt="Team 6" id="Team 6">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                          <h2 class="card-title mb-0"><strong>Aston Martin Aramco Cognizant</strong></h2>
+                          <img src="./Team Foto's/logo aston martin.avif" alt="Logo Small" width="10%">
+                        </div>
+                        <div class="card-footer">
+                          <p class="card-text"><strong>0x Wereldkampioen</strong></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="card">
+                            <img src="./Team Foto's/Williams Team.avif" class="card-img-top" alt="Team 7" id="Team 7">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                              <h2 class="card-title mb-0"><strong>Williams Racing</strong></h2>
+                              <img src="./Team Foto's/logo williams.avif" alt="Logo Small" width="10%">
+                            </div>
+                            <div class="card-footer">
+                              <p class="card-text"><strong>9x Wereldkampioen</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                          <div class="card">
+                            <img src="./Team Foto's/Alpha Tauri Team.avif" class="card-img-top" alt="Team 8" id="Team 8">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                              <h2 class="card-title mb-0"><strong>Scuderia AlphaTauri</strong></h2>
+                              <img src="./Team Foto's/logo alpha tauri.avif" alt="Logo Small" width="10%">
+                            </div>
+                            <div class="card-footer">
+                              <p class="card-text"><strong>0x Wereldkampioen</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6 mb-4">
+                              <div class="card">
+                                <img src="./Team Foto's/Haas Team.avif" class="card-img-top" alt="Team 9" id="Team 9">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                  <h2 class="card-title mb-0"><strong>MoneyGram Haas F1 Team</strong></h2>
+                                  <img src="./Team Foto's/logo haas.avif" alt="Logo Small" width="10%">
+                                </div>
+                                <div class="card-footer">
+                                  <p class="card-text"><strong>0x Wereldkampioen</strong></p>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="col-md-6 mb-4">
+                              <div class="card">
+                                <img src="./Team Foto's/Alfa Romeo Team.avif" class="card-img-top" alt="Team 10" id="Team 10">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                  <h2 class="card-title mb-0"><strong>Alfa Romeo F1 Team Stake</strong></h2>
+                                  <img src="./Team Foto's/logo alfa romeo.avif" alt="Logo Small" width="10%">
+                                </div>
+                                <div class="card-footer">
+                                  <p class="card-text"><strong>0x Wereldkampioen</strong></p>
+                                </div>
+                              </div>
+
+
+                              </div>
+
+
+
+                
+        </div>
+      </div>
+    
+      <footer class="container-fluid text-center h6 small p-4">&copy; Formule 1 2023</footer>
+
+    </body>
+    </html>
