@@ -1,652 +1,725 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Circuits</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="./style.css">
   <style>
     .navbar-nav .nav-link {
         margin-right: 20px; 
     }
-
     .dropdown-menu a {
         padding: 3px 10px; 
     }
 </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Concept</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Drivers</a>
-                <ul class="dropdown-menu multi-column" style="width: 310px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <li><a class="dropdown-item" href="drivers.html">Max Verstappen</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Sergio Perez</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lewis Hamilton</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Fernando Alonso</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Carlos Sainz</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Charles Leclerc</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lando Norris</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">George Russell</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Oscar Piastri</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lance Stroll</a></li>
-                        </div>
-                        <div class="col-md-6" style="border-left: 1px solid #474646;">
-                            <li><a class="dropdown-item" href="drivers.html">Pierre Gasly</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Esteban Ocon</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Alexander Albon</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Valtteri Bottas</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Nico Hulkenberg</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Zhou Guanyu</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Yuki Tsunoda</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Kevin Magnussen</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Logan Sargeant</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Daniel Ricciardo</a></li>
-                        </div>
-                    </div>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                  <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Teams</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./teams.html#Team 1">Red Bull Racing </a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 2">Mercedes</a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 3">Ferrari </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 4">Aston Martin </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 5">Mclaren </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 6">Alpine </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 7">Williams </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 8">Alfa Romeo </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 9">Haas F1 Team </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 10">Alpha Tauri </a></li>
+    <!-- Navigatiebalk met behulp van Bootstrap -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+          <section class="container-fluid">
+            <!-- Logo in de navigatiebalk -->
+            <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigatie-items -->
+            <section class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#CONCEPT">Concept</a>
+                </li>
+                <!-- Dropdown-menu voor coureurs -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Drivers</a>
+                  <ul class="dropdown-menu multi-column" style="width: 310px;">
+                      <article class="row">
+                          <section class="col-md-6">
+                              <li><a class="dropdown-item" href="./drivers.html">Max Verstappen</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Sergio Perez</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lewis Hamilton</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Fernando Alonso</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Carlos Sainz</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Charles Leclerc</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lando Norris</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">George Russell</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Oscar Piastri</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lance Stroll</a></li>
+                          </section>
+                          <section class="col-md-6" style="border-left: 1px solid #474646;">
+                              <li><a class="dropdown-item" href="./drivers.html">Pierre Gasly</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Esteban Ocon</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Alexander Albon</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Valtteri Bottas</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Nico Hulkenberg</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Zhou Guanyu</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Yuki Tsunoda</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Kevin Magnussen</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Logan Sargeant</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Daniel Ricciardo</a></li>
+                          </section>
+                      </article>
                   </ul>
                 </li>
-
+                <!-- Dropdown-menu voor teams -->
+                <li class="nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
+                      Teams</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./teams.html#Teams">Red Bull Racing </a></li>
+                      <li><a class="dropdown-item" href="./teams.html#Team2">Mercedes</a></li>
+                      <li><a class="dropdown-item" href="./teams.html#Team3">Ferrari </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team4">Aston Martin </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team5">Mclaren </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team6">Alpine </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team7">Williams </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team8">Alfa Romeo </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team9">Haas F1 Team </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team10">Alpha Tauri </a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./circuits.html">Circuits</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contact.html">Contact</a>
+                </li>
+              </ul>
+              <!-- Zoekformulier in de navigatiebalk -->
+              <form class="d-flex" role="search" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search" id="searchInput">
+                <button class="btn btn-sm btn-outline-secondary" type="button" onclick="searchFunction()" style="color: rgb(227, 222, 222);">zoeken</button>
+              </form>
+            </section>
+          </section>
+        </nav>
+    </header>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./Contact.html">Contact</a>
-              </li>
-            </ul>
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-              <button class="btn btn-sm btn-outline-secondary" type="submit" style="color: rgb(227, 222, 222);">zoeken</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-<header class="m-3">  
+ <!-- Hoofding van de pagina -->
+ <header class="m-3">  
     <h2 class="display-4 text-danger text-uppercase fw-bolder fst-italic text-center">F1 Circuits 2023</h2>
-</header>
+ </header>
 
-<div class="container-fluid  text-light">
-    <section class="m-3">
-        <div class="container-fluid bg-dark text-light">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div>
+    <!--circuits -->
+ <section class="container-fluid text-light">
+        <article class="container-fluid bg-dark text-light">
+            <section class="row">
+                <article class="col-md-4">
+                    <section>
                         <h2 id="round1" class="h4 text-danger"><strong>1. BAHRAIN INTERNATIONAL CIRCUIT</strong></h2>
                         <p><strong>Land:</strong> Bahrein</p>
                         <p><strong>Datum:</strong> 03-05 Maart</p>
                         <p><strong>Lengte:</strong> 5,412 km</p>
                         <p><strong>Aantal Bochten:</strong> 15</p>
-                        <p><strong>Snelste Ronde:</strong> 1:31:447</p> 
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
+                        <p><strong>Snelste Ronde:</strong> 1:31:447</p>
+                    </section>
+                </article>
+                <article class="col-md-4 text-center">
                     <img src="./Circuits foto's/bahrain circuit.avif" alt="bahrain" width="80%">
-                </div>
-                <div class="col-md-4 text-end mt-5 mb-5">
+                </article>
+                <article class="col-md-4 text-end mt-5 mb-5">
                     <img src="./Circuits foto's/bahrain.png" alt="flag" width="50%" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </article>
+    
 
-        <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+    <!-- Scheiding -->
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
-        <div class="container-fluid bg-dark text-white">
-            <div class="row">
-                <div class="col-md-4">
-                    <div>
-                        <h2 id="round2" class="h4 text-danger"><strong>2. JEDDAH CORNICHE CIRCUIT</strong></h2>
-                        <p><strong>Land:</strong> Saudi-Arabië</p>
-                        <p><strong>Datum:</strong> 17-19 Maart</p>
-                        <p><strong>Lengte:</strong> 6,174 km</p>
-                        <p><strong>Aantal Bochten:</strong> 27</p>
-                        <p><strong>Snelste Ronde:</strong> 1:30:734</p>   
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="./Circuits foto's/jeddah circuit.png" alt="tweede_circuit" width="80%">
-                </div>
-                <div class="col-md-4 text-end mt-5 mb-5">
-                    <img src="./Circuits foto's/jeddah.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round2" class="h4 text-danger"><strong>2. JEDDAH CORNICHE CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Saudi-Arabië</p>
+                    <p><strong>Datum:</strong> 17-19 Maart</p>
+                    <p><strong>Lengte:</strong> 6,174 km</p>
+                    <p><strong>Aantal Bochten:</strong> 27</p>
+                    <p><strong>Snelste Ronde:</strong> 1:30:734</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <img src="./Circuits foto's/jeddah circuit.png" alt="tweede_circuit" width="80%">
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <img src="./Circuits foto's/jeddah.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+            </section>
+        </article>
+    </section>
 
-        <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+    <!-- Scheiding -->
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
-        <div class="container-fluid bg-dark text-white">
-            <div class="row">
-                <div class="col-md-4">
-                    <div>
-                        <h2 id="round3" class="h4 text-danger"><strong>3. ALBERT PARK CIRCUIT</strong></h2>
-                        <p><strong>Land:</strong> Australië</p>
-                        <p><strong>Datum:</strong> 31-2 Maart-April</p>
-                        <p><strong>Lengte:</strong> 5,278 km</p>
-                        <p><strong>Aantal Bochten:</strong> 14</p>
-                        <p><strong>Snelste Ronde:</strong> 1:20:235</p>   
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="./Circuits foto's/australie circuit.avif" alt="tweede_circuit" width="80%">
-                </div>
-                <div class="col-md-4 text-end mt-5 mb-5">
-                    <img src="./Circuits foto's/australie.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round3" class="h4 text-danger"><strong>3. ALBERT PARK CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Australië</p>
+                    <p><strong>Datum:</strong> 31 Maart - 2 April</p>
+                    <p><strong>Lengte:</strong> 5,278 km</p>
+                    <p><strong>Aantal Bochten:</strong> 14</p>
+                    <p><strong>Snelste Ronde:</strong> 1:20:235</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <img src="./Circuits foto's/australie circuit.avif" alt="australie_circuit" width="80%">
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <img src="./Circuits foto's/australie.png" alt="australie_flag" width="50%" class="img-fluid rounded">
+            </section>
+        </article>
+    </section>
 
-        <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
-        <div class="container-fluid bg-dark text-white">
-          <div class="row">
-              <div class="col-md-4">
-                  <div>
-                      <h2 id="round4" class="h4 text-danger"><strong>4. BAKU CITY CIRCUIT</strong></h2>
-                      <p><strong>Land:</strong> Azerbeidzjan</p>
-                      <p><strong>Datum:</strong> 28-30 April</p>
-                      <p><strong>Lengte:</strong> 6,003 km</p>
-                      <p><strong>Aantal Bochten:</strong> 20</p>
-                      <p><strong>Snelste Ronde:</strong> 1:43:009</p>   
-                  </div>
-              </div>
-              <div class="col-md-4 text-center">
-                  <img src="./Circuits foto's/baku circuit.avif" alt="tweede_circuit" width="80%">
-              </div>
-              <div class="col-md-4 text-end mt-5 mb-5">
-                  <img src="./Circuits foto's/azerbeidzjan.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-              </div>
-          </div>
-      </div>
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+         <section class="col-md-4">
+            <section>
+                <h2 id="round4" class="h4 text-danger"><strong>4. BAKU CITY CIRCUIT</strong></h2>
+                <p><strong>Land:</strong> Azerbeidzjan</p>
+                <p><strong>Datum:</strong> 28-30 April</p>
+                <p><strong>Lengte:</strong> 6,003 km</p>
+                <p><strong>Aantal Bochten:</strong> 20</p>
+                <p><strong>Snelste Ronde:</strong> 1:43:009</p>
+            </section>
+         </section>
+         <section class="col-md-4 text-center">
+            <img src="./Circuits foto's/baku circuit.avif" alt="tweede_circuit" width="80%">
+         </section>
+         <section class="col-md-4 text-end mt-5 mb-5">
+            <img src="./Circuits foto's/azerbeidzjan.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+         </section>
+        </article>
+    </section>
 
-      <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
-      <div class="container-fluid bg-dark text-white">
-        <div class="row">
-            <div class="col-md-4">
-                <div>
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
                     <h2 id="round5" class="h4 text-danger"><strong>5. MIAMI INTERNATIONAL AUTODROME</strong></h2>
                     <p><strong>Land:</strong> Verenigde Staten</p>
                     <p><strong>Datum:</strong> 5-7 Mei</p>
                     <p><strong>Lengte:</strong> 5,412 km</p>
                     <p><strong>Aantal Bochten:</strong> 19</p>
-                    <p><strong>Snelste Ronde:</strong> 1:29:708</p>   
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="./Circuits foto's/miami circuit.avif" alt="tweede_circuit" width="80%">
-            </div>
-            <div class="col-md-4 text-end mt-5 mb-5">
-                <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-            </div>
-        </div>
-    </div>
+                    <p><strong>Snelste Ronde:</strong> 1:29:708</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/miami circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
 
     <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
-    <div class="container-fluid bg-dark text-white">
-      <div class="row">
-          <div class="col-md-4">
-              <div>
-                  <h2 id="round6" class="h4 text-danger"><strong>6. AUTODROMO ENZO E DINO FERRARI</strong></h2>
-                  <p><strong>Land:</strong> Italië</p>
-                  <p><strong>Datum:</strong> 19-21 Mei</p>
-                  <p><strong>Lengte:</strong> 4,909 km</p>
-                  <p><strong>Aantal Bochten:</strong> 19</p>
-                  <p><strong>Snelste Ronde:</strong> 1:15:484</p>   
-              </div>
-          </div>
-          <div class="col-md-4 text-center">
-              <img src="./Circuits foto's/emilia roagma circuit.png" alt="tweede_circuit" width="80%">
-          </div>
-          <div class="col-md-4 text-end mt-5 mb-5">
-              <img src="./Circuits foto's/italië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-          </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-  <div class="container-fluid bg-dark text-white">
-    <div class="row">
-        <div class="col-md-4">
-            <div>
-                <h2 id="round7" class="h4 text-danger"><strong>7. CIRCUIT DE MONACO</strong></h2>
-                <p><strong>Land:</strong> Monaco</p>
-                <p><strong>Datum:</strong> 26-28 Mei</p>
-                <p><strong>Lengte:</strong> 3,337 km</p>
+   <section class="container-fluid bg-dark text-white">
+     <article class="row">
+        <section class="col-md-4">
+            <section>
+                <h2 id="round6" class="h4 text-danger"><strong>6. AUTODROMO ENZO E DINO FERRARI</strong></h2>
+                <p><strong>Land:</strong> Italië</p>
+                <p><strong>Datum:</strong> 19-21 Mei</p>
+                <p><strong>Lengte:</strong> 4,909 km</p>
                 <p><strong>Aantal Bochten:</strong> 19</p>
-                <p><strong>Snelste Ronde:</strong> 1:12:909</p>   
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <img src="./Circuits foto's/monaco circuit.png" alt="tweede_circuit" width="80%">
-        </div>
-        <div class="col-md-4 text-end mt-5 mb-5">
-            <img src="./Circuits foto's/monaco.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round8" class="h4 text-danger"><strong>8. CIRCUIT DE BARCELONA-CATALUNYA</strong></h2>
-              <p><strong>Land:</strong> Spanje </p>
-              <p><strong>Datum:</strong> 2-4 Juni</p>
-              <p><strong>Lengte:</strong> 4,657 km</p>
-              <p><strong>Aantal Bochten:</strong> 14</p>
-              <p><strong>Snelste Ronde:</strong> 1:16:330</p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/barcelona circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/spanje.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round9" class="h4 text-danger"><strong>9. CIRCUIT GILLES-VILLENEUVE</strong></h2>
-              <p><strong>Land:</strong> Canada </p>
-              <p><strong>Datum:</strong> 16-18 Juni</p>
-              <p><strong>Lengte:</strong> 4,361 km</p>
-              <p><strong>Aantal Bochten:</strong> 14</p>
-              <p><strong>Snelste Ronde:</strong> 1:13:078</p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/gilles villeneuve circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/canada.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round10" class="h4 text-danger"><strong>10. RED BULL RING</strong></h2>
-              <p><strong>Land:</strong> Oostenrijk </p>
-              <p><strong>Datum:</strong> 30-2 Juni-Juli</p>
-              <p><strong>Lengte:</strong> 4,318 km</p>
-              <p><strong>Aantal Bochten:</strong> 10</p>
-              <p><strong>Snelste Ronde:</strong> 1:05:619</p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/red bull ring.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/oostenrijk.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round11" class="h4 text-danger"><strong>11. SILVERSTONE CIRCUIT</strong></h2>
-              <p><strong>Land:</strong> Groot-Britannië </p>
-              <p><strong>Datum:</strong> 7-9 Juli</p>
-              <p><strong>Lengte:</strong> 5,891 km</p>
-              <p><strong>Aantal Bochten:</strong> 18</p>
-              <p><strong>Snelste Ronde:</strong> 1:27:097 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/silverstone.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/groot-britannië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round12" class="h4 text-danger"><strong>12. HUNGARORING</strong></h2>
-              <p><strong>Land:</strong> Hongarije </p>
-              <p><strong>Datum:</strong> 21-23 Juli</p>
-              <p><strong>Lengte:</strong> 4,381 km</p>
-              <p><strong>Aantal Bochten:</strong> 14</p>
-              <p><strong>Snelste Ronde:</strong> 1:16:627 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/hungaroring.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/hongarije.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round13" class="h4 text-danger"><strong>13. CIRCUIT DE SPA-FRANCORCHAMPS</strong></h2>
-              <p><strong>Land:</strong> België </p>
-              <p><strong>Datum:</strong> 28-30 Juli</p>
-              <p><strong>Lengte:</strong> 7,004 km</p>
-              <p><strong>Aantal Bochten:</strong> 19</p>
-              <p><strong>Snelste Ronde:</strong> 1:46:286  </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/spa-francorchamps circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/belgie.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round14" class="h4 text-danger"><strong>14. CIRCUIT ZANDVOORT</strong></h2>
-              <p><strong>Land:</strong> Nederland </p>
-              <p><strong>Datum:</strong> 25-27 Augustus</p>
-              <p><strong>Lengte:</strong> 4,259 km</p>
-              <p><strong>Aantal Bochten:</strong> 14</p>
-              <p><strong>Snelste Ronde:</strong> 1:11:097 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/zandvoort circuit.png" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/nederland.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round15" class="h4 text-danger"><strong>15. AUTODROMO NAZIONALE MONZA</strong></h2>
-              <p><strong>Land:</strong> Italië </p>
-              <p><strong>Datum:</strong> 1-3 September</p>
-              <p><strong>Lengte:</strong> 5,793 km</p>
-              <p><strong>Aantal Bochten:</strong> 11</p>
-              <p><strong>Snelste Ronde:</strong> 1:21:046 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/monza circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/italië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round16" class="h4 text-danger"><strong>16. MARINA BAY STREET CIRCUIT</strong></h2>
-              <p><strong>Land:</strong> Singapore </p>
-              <p><strong>Datum:</strong> 15-17 September</p>
-              <p><strong>Lengte:</strong> 4,94 km</p>
-              <p><strong>Aantal Bochten:</strong> 19</p>
-              <p><strong>Snelste Ronde:</strong> 1:35:867 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/marina bay circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/singapore.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round17" class="h4 text-danger"><strong>17. SUZUKA INTERNATIONAL COURSE</strong></h2>
-              <p><strong>Land:</strong> Japan</p>
-              <p><strong>Datum:</strong> 22-24 September</p>
-              <p><strong>Lengte:</strong> 5,807 km</p>
-              <p><strong>Aantal Bochten:</strong> 18</p>
-              <p><strong>Snelste Ronde:</strong> 1:30:983 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/suzuka circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/japan.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round18" class="h4 text-danger"><strong>18. LUSAIL INTERNATIONAL CIRCUIT</strong></h2>
-              <p><strong>Land:</strong> Qatar</p>
-              <p><strong>Datum:</strong> 6-8 Oktober</p>
-              <p><strong>Lengte:</strong> 5,419 km</p>
-              <p><strong>Aantal Bochten:</strong> 16</p>
-              <p><strong>Snelste Ronde:</strong> 1:24:319 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/lusal circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/qatar.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round19" class="h4 text-danger"><strong>19. CIRCUIT OF THE AMERICAS</strong></h2>
-              <p><strong>Land:</strong> Verenigde Staten</p>
-              <p><strong>Datum:</strong> 20-22 Oktober</p>
-              <p><strong>Lengte:</strong> 5,513 km</p>
-              <p><strong>Aantal Bochten:</strong> 20  </p>
-              <p><strong>Snelste Ronde:</strong> 1:36:169 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/circuit of the americas.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round20" class="h4 text-danger"><strong>20. AUTÓDROMO HERMANOS RODRÍGUEZ</strong></h2>
-              <p><strong>Land:</strong> Mexico</p>
-              <p><strong>Datum:</strong> 27-29 Oktober</p>
-              <p><strong>Lengte:</strong> 4,304 km</p>
-              <p><strong>Aantal Bochten:</strong> 17  </p>
-              <p><strong>Snelste Ronde:</strong> 1:17:774 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/mexico circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/mexico.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round21" class="h4 text-danger"><strong>21. AUTÓDROMO JOSÉ CARLOS PACE</strong></h2>
-              <p><strong>Land:</strong> Brazilië</p>
-              <p><strong>Datum:</strong> 3-5 November</p>
-              <p><strong>Lengte:</strong> 4,309 km</p>
-              <p><strong>Aantal Bochten:</strong> 15  </p>
-              <p><strong>Snelste Ronde:</strong> 1:10:540 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/jose carlos circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/brazilië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round22" class="h4 text-danger"><strong>22. LAS VEGAS STRIP CIRCUIT</strong></h2>
-              <p><strong>Land:</strong> Verenigde Staten</p>
-              <p><strong>Datum:</strong> 16-18 November</p>
-              <p><strong>Lengte:</strong> 6,201 km</p>
-              <p><strong>Aantal Bochten:</strong> 17  </p>
-              <p><strong>Snelste Ronde:</strong> 1:35:490 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/las vegas circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-light" style="height: 0.5cm;"></div>
-
-<div class="container-fluid bg-dark text-white">
-  <div class="row">
-      <div class="col-md-4">
-          <div>
-              <h2 id="round23" class="h4 text-danger"><strong>23. YAS MARINA CIRCUIT</strong></h2>
-              <p><strong>Land:</strong> Verenigde Arabische Emiraten</p>
-              <p><strong>Datum:</strong> 24-26 November</p>
-              <p><strong>Lengte:</strong> 5,281 km</p>
-              <p><strong>Aantal Bochten:</strong> 16  </p>
-              <p><strong>Snelste Ronde:</strong> 1:26:103 </p>   
-          </div>
-      </div>
-      <div class="col-md-4 text-center">
-          <img src="./Circuits foto's/yas marina circuit.avif" alt="tweede_circuit" width="80%">
-      </div>
-      <div class="col-md-4 text-end mt-5 mb-5">
-          <img src="./Circuits foto's/abu dhabi.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
-      </div>
-  </div>
-</div>
+                <p><strong>Snelste Ronde:</strong> 1:15:484</p>
+            </section>
+        </section>
+        <section class="col-md-4 text-center">
+            <figure>
+                <img src="./Circuits foto's/emilia roagma circuit.png" alt="tweede_circuit" width="80%">
+            </figure>
+        </section>
+        <section class="col-md-4 text-end mt-5 mb-4">
+            <figure>
+                <img src="./Circuits foto's/italië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+            </figure>
+        </section>
+     </article>
     </section>
-</div>
 
-<footer class="container-fluid text-center h6 small p-4">&copy; Formule 1 2023</footer>
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
 
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round7" class="h4 text-danger"><strong>7. CIRCUIT DE MONACO</strong></h2>
+                    <p><strong>Land:</strong> Monaco</p>
+                    <p><strong>Datum:</strong> 26-28 Mei</p>
+                    <p><strong>Lengte:</strong> 3,337 km</p>
+                    <p><strong>Aantal Bochten:</strong> 19</p>
+                    <p><strong>Snelste Ronde:</strong> 1:12:909</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/monaco circuit.png" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/monaco.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round8" class="h4 text-danger"><strong>8. CIRCUIT DE BARCELONA-CATALUNYA</strong></h2>
+                    <p><strong>Land:</strong> Spanje </p>
+                    <p><strong>Datum:</strong> 2-4 Juni</p>
+                    <p><strong>Lengte:</strong> 4,657 km</p>
+                    <p><strong>Aantal Bochten:</strong> 14</p>
+                    <p><strong>Snelste Ronde:</strong> 1:16:330</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/barcelona circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/spanje.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round9" class="h4 text-danger"><strong>9. CIRCUIT GILLES-VILLENEUVE</strong></h2>
+                    <p><strong>Land:</strong> Canada </p>
+                    <p><strong>Datum:</strong> 16-18 Juni</p>
+                    <p><strong>Lengte:</strong> 4,361 km</p>
+                    <p><strong>Aantal Bochten:</strong> 14</p>
+                    <p><strong>Snelste Ronde:</strong> 1:13:078</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/gilles villeneuve circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/canada.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round10" class="h4 text-danger"><strong>10. RED BULL RING</strong></h2>
+                    <p><strong>Land:</strong> Oostenrijk </p>
+                    <p><strong>Datum:</strong> 30-2 Juni-Juli</p>
+                    <p><strong>Lengte:</strong> 4,318 km</p>
+                    <p><strong>Aantal Bochten:</strong> 10</p>
+                    <p><strong>Snelste Ronde:</strong> 1:05:619</p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/red bull ring.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/oostenrijk.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round11" class="h4 text-danger"><strong>11. SILVERSTONE CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Groot-Britannië </p>
+                    <p><strong>Datum:</strong> 7-9 Juli</p>
+                    <p><strong>Lengte:</strong> 5,891 km</p>
+                    <p><strong>Aantal Bochten:</strong> 18</p>
+                    <p><strong>Snelste Ronde:</strong> 1:27:097 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/silverstone.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/groot-britannië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round12" class="h4 text-danger"><strong>12. HUNGARORING</strong></h2>
+                    <p><strong>Land:</strong> Hongarije </p>
+                    <p><strong>Datum:</strong> 21-23 Juli</p>
+                    <p><strong>Lengte:</strong> 4,381 km</p>
+                    <p><strong>Aantal Bochten:</strong> 14</p>
+                    <p><strong>Snelste Ronde:</strong> 1:16:627 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/hungaroring.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/hongarije.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round13" class="h4 text-danger"><strong>13. CIRCUIT DE SPA-FRANCORCHAMPS</strong></h2>
+                    <p><strong>Land:</strong> België </p>
+                    <p><strong>Datum:</strong> 28-30 Juli</p>
+                    <p><strong>Lengte:</strong> 7,004 km</p>
+                    <p><strong>Aantal Bochten:</strong> 19</p>
+                    <p><strong>Snelste Ronde:</strong> 1:46:286  </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/spa-francorchamps circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/belgie.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round14" class="h4 text-danger"><strong>14. CIRCUIT ZANDVOORT</strong></h2>
+                    <p><strong>Land:</strong> Nederland </p>
+                    <p><strong>Datum:</strong> 25-27 Augustus</p>
+                    <p><strong>Lengte:</strong> 4,259 km</p>
+                    <p><strong>Aantal Bochten:</strong> 14</p>
+                    <p><strong>Snelste Ronde:</strong> 1:11:097 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/zandvoort circuit.png" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/nederland.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round15" class="h4 text-danger"><strong>15. AUTODROMO NAZIONALE MONZA</strong></h2>
+                    <p><strong>Land:</strong> Italië </p>
+                    <p><strong>Datum:</strong> 1-3 September</p>
+                    <p><strong>Lengte:</strong> 5,793 km</p>
+                    <p><strong>Aantal Bochten:</strong> 11</p>
+                    <p><strong>Snelste Ronde:</strong> 1:21:046 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/monza circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/italië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round16" class="h4 text-danger"><strong>16. MARINA BAY STREET CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Singapore </p>
+                    <p><strong>Datum:</strong> 15-17 September</p>
+                    <p><strong>Lengte:</strong> 4,94 km</p>
+                    <p><strong>Aantal Bochten:</strong> 19</p>
+                    <p><strong>Snelste Ronde:</strong> 1:35:867 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/marina bay circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/singapore.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round17" class="h4 text-danger"><strong>17. SUZUKA INTERNATIONAL COURSE</strong></h2>
+                    <p><strong>Land:</strong> Japan</p>
+                    <p><strong>Datum:</strong> 22-24 September</p>
+                    <p><strong>Lengte:</strong> 5,807 km</p>
+                    <p><strong>Aantal Bochten:</strong> 18</p>
+                    <p><strong>Snelste Ronde:</strong> 1:30:983 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/suzuka circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/japan.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round18" class="h4 text-danger"><strong>18. LUSAIL INTERNATIONAL CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Qatar</p>
+                    <p><strong>Datum:</strong> 6-8 Oktober</p>
+                    <p><strong>Lengte:</strong> 5,419 km</p>
+                    <p><strong>Aantal Bochten:</strong> 16</p>
+                    <p><strong>Snelste Ronde:</strong> 1:24:319 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/lusal circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/qatar.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round19" class="h4 text-danger"><strong>19. CIRCUIT OF THE AMERICAS</strong></h2>
+                    <p><strong>Land:</strong> Verenigde Staten</p>
+                    <p><strong>Datum:</strong> 20-22 Oktober</p>
+                    <p><strong>Lengte:</strong> 5,513 km</p>
+                    <p><strong>Aantal Bochten:</strong> 20  </p>
+                    <p><strong>Snelste Ronde:</strong> 1:36:169 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/circuit of the americas.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round20" class="h4 text-danger"><strong>20. AUTÓDROMO HERMANOS RODRÍGUEZ</strong></h2>
+                    <p><strong>Land:</strong> Mexico</p>
+                    <p><strong>Datum:</strong> 27-29 Oktober</p>
+                    <p><strong>Lengte:</strong> 4,304 km</p>
+                    <p><strong>Aantal Bochten:</strong> 17  </p>
+                    <p><strong>Snelste Ronde:</strong> 1:17:774 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/mexico circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/mexico.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round21" class="h4 text-danger"><strong>21. AUTÓDROMO JOSÉ CARLOS PACE</strong></h2>
+                    <p><strong>Land:</strong> Brazilië</p>
+                    <p><strong>Datum:</strong> 3-5 November</p>
+                    <p><strong>Lengte:</strong> 4,309 km</p>
+                    <p><strong>Aantal Bochten:</strong> 15  </p>
+                    <p><strong>Snelste Ronde:</strong> 1:10:540 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/jose carlos circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-4">
+                <figure>
+                    <img src="./Circuits foto's/brazilië.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round22" class="h4 text-danger"><strong>22. LAS VEGAS STRIP CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Verenigde Staten</p>
+                    <p><strong>Datum:</strong> 16-18 November</p>
+                    <p><strong>Lengte:</strong> 6,201 km</p>
+                    <p><strong>Aantal Bochten:</strong> 17  </p>
+                    <p><strong>Snelste Ronde:</strong> 1:35:490 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/las vegas circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/united states.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+    
+    <div class="container-fluid bg-light" style="height: 0.5cm;"></div>
+
+    <section class="container-fluid bg-dark text-white">
+        <article class="row">
+            <section class="col-md-4">
+                <section>
+                    <h2 id="round23" class="h4 text-danger"><strong>23. YAS MARINA CIRCUIT</strong></h2>
+                    <p><strong>Land:</strong> Verenigde Arabische Emiraten</p>
+                    <p><strong>Datum:</strong> 24-26 November</p>
+                    <p><strong>Lengte:</strong> 5,281 km</p>
+                    <p><strong>Aantal Bochten:</strong> 16  </p>
+                    <p><strong>Snelste Ronde:</strong> 1:26:103 </p>
+                </section>
+            </section>
+            <section class="col-md-4 text-center">
+                <figure>
+                    <img src="./Circuits foto's/yas marina circuit.avif" alt="tweede_circuit" width="80%">
+                </figure>
+            </section>
+            <section class="col-md-4 text-end mt-5 mb-5">
+                <figure>
+                    <img src="./Circuits foto's/abu dhabi.png" alt="tweede_flag" width="50%" class="img-fluid rounded">
+                </figure>
+            </section>
+        </article>
+    </section>
+ </section>
+
+ <footer class="container-fluid text-center h6 small p-4">&copy; Formule 1 2023</footer>
 </body>
 </html>

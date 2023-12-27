@@ -1,386 +1,389 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drivers</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="./style.css">
   <style>
     .navbar-nav .nav-link {
         margin-right: 20px; 
     }
-
     .dropdown-menu a {
         padding: 3px 10px; 
     }
 </style>
 </head>
 <body>
+  <!-- Navigatiebalk met behulp van Bootstrap -->
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75">
-          </a>
+        <section class="container-fluid">
+          <!-- Logo in de navigatiebalk -->
+          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigatie-items -->
+          <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Concept</a>
+                <a class="nav-link" href="#CONCEPT">Concept</a>
               </li>
-              
+              <!-- Dropdown-menu voor coureurs -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Drivers</a>
                 <ul class="dropdown-menu multi-column" style="width: 310px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <li><a class="dropdown-item" href="drivers.html">Max Verstappen</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Sergio Perez</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lewis Hamilton</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Fernando Alonso</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Carlos Sainz</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Charles Leclerc</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lando Norris</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">George Russell</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Oscar Piastri</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Lance Stroll</a></li>
-                        </div>
-                        <div class="col-md-6" style="border-left: 1px solid #474646;">
-                            <li><a class="dropdown-item" href="drivers.html">Pierre Gasly</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Esteban Ocon</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Alexander Albon</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Valtteri Bottas</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Nico Hulkenberg</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Zhou Guanyu</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Yuki Tsunoda</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Kevin Magnussen</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Logan Sargeant</a></li>
-                            <li><a class="dropdown-item" href="drivers.html">Daniel Ricciardo</a></li>
-                        </div>
-                    </div>
+                    <article class="row">
+                        <section class="col-md-6">
+                            <li><a class="dropdown-item" href="./drivers.html">Max Verstappen</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Sergio Perez</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Lewis Hamilton</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Fernando Alonso</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Carlos Sainz</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Charles Leclerc</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Lando Norris</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">George Russell</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Oscar Piastri</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Lance Stroll</a></li>
+                        </section>
+                        <section class="col-md-6" style="border-left: 1px solid #474646;">
+                            <li><a class="dropdown-item" href="./drivers.html">Pierre Gasly</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Esteban Ocon</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Alexander Albon</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Valtteri Bottas</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Nico Hulkenberg</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Zhou Guanyu</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Yuki Tsunoda</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Kevin Magnussen</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Logan Sargeant</a></li>
+                            <li><a class="dropdown-item" href="./drivers.html">Daniel Ricciardo</a></li>
+                        </section>
+                    </article>
                 </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                  <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </li>
+              <!-- Dropdown-menu voor teams -->
+              <li class="nav-item dropdown">
+                  <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
                     Teams</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./teams.html#Team 1">Red Bull Racing </a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 2">Mercedes</a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 3">Ferrari </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 4">Aston Martin </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 5">Mclaren </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 6">Alpine </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 7">Williams </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 8">Alfa Romeo </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 9">Haas F1 Team </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 10">Alpha Tauri </a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Teams">Red Bull Racing </a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team2">Mercedes</a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team3">Ferrari </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team4">Aston Martin </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team5">Mclaren </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team6">Alpine </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team7">Williams </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team8">Alfa Romeo </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team9">Haas F1 Team </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team10">Alpha Tauri </a></li>
                   </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./circuits.html">Circuits</a>
-                </li>
-
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./circuits.html">Circuits</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="./Contact.html">Contact</a>
               </li>
             </ul>
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-              <button class="btn btn-sm btn-outline-secondary" type="submit" style="color: rgb(227, 222, 222);">zoeken</button>
+            <!-- Zoekformulier in de navigatiebalk -->
+            <form class="d-flex" role="search" id="searchForm">
+              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search" id="searchInput">
+              <button class="btn btn-sm btn-outline-secondary" type="button" onclick="searchFunction()" style="color: rgb(227, 222, 222);">zoeken</button>
             </form>
-          </div>
-        </div>
+          </section>
+        </section>
       </nav>
+  </header>
+
+    <!-- Hoofding van de pagina -->
 <header class="m-3">  
     <h2 class="display-4 text-danger text-uppercase fw-bolder fst-italic text-center">Drivers</h2>
 </header>
-<div class="container mt-4">
-  <div class="row justify-content-center">
-    <div class="col-md-8">    
-      <div id="coureursCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
 
-          <div class="carousel-item active" id="maxVerstappen">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Max Verstappen.avif" alt="max verstappen" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #000000; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+<!-- Hoofdsectie over coureurs Carousel -->
+<main class="container mt-4">
+  <section class="row justify-content-center">
+    <article class="col-md-8">
+      <section id="coureursCarousel" class="carousel slide" data-ride="carousel">
+        <article class="carousel-inner">
+
+          <article class="carousel-item active" id="maxVerstappen">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Max Verstappen.avif" alt="Max Verstappen" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Max Verstappen</h3>
               <p>Team: Red Bull Racing</p> 
               <p>Leeftijd: 26</p>
               <p>Drievoudig F1-Wereldkampioen</p> 
               <img src="./Circuits foto's/nederland.png" alt="Nederlandse vlag" width="40" height="30">
-            </div>
-          </div>
+            </section>
+          </article>
 
-          <div class="carousel-item" id="sergioPerez">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Sergio Perez.avif" alt="sergio perez" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px #FFD700; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="sergioPerez">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Sergio Perez.avif" alt="Sergio Perez" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px #FFD700; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Sergio Perez</h3>
               <p>Team: Red Bull Racing</p> 
               <p>Leeftijd: 33</p> 
-              <img src="./Circuits foto's/mexico.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/mexico.png" alt="Mexicaanse vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="charlesLeclerc">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Charles Leclerc.avif" alt="charles leclerc" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px #DC143C; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="charlesLeclerc">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Charles Leclerc.avif" alt="Charles Leclerc" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px #DC143C; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Charles Leclerc</h3>
               <p>Team: Scuderia Ferrari</p> 
               <p>Leeftijd: 26</p> 
-              <img src="./Circuits foto's/monaco.png" alt="vlag" width="40" height="30" style="border: 1px solid #bd0000;">
-            </div>
-          </div>
+              <img src="./Circuits foto's/monaco.png" alt="Monegaskische vlag" width="40" height="30" style="border: 1px solid #bd0000;">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="carlosSainz">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Carlos Sainz.avif" alt="carlos sainz" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="carlosSainz">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Carlos Sainz.avif" alt="Carlos Sainz" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Carlos Sainz</h3>
               <p>Team: Scuderia Ferrari</p> 
               <p>Leeftijd: 29</p> 
-              <img src="./Circuits foto's/spanje.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/spanje.png" alt="Spaanse vlag" width="40" height="30">
+            </section>
+          </article>
 
-
-          
-          <div class="carousel-item" id="georgeRussell">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/George Russell.avif" alt="george russell" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="georgeRussell">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/George Russell.avif" alt="George Russell" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>George Russell</h3>
               <p>Team: Mercedes AMG Petronas</p> 
               <p>Leeftijd: 25</p> 
-              <img src="./Circuits foto's/groot-britannië.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/groot-britannië.png" alt="Britse vlag" width="40" height="30">
+            </section>
+          </article>
 
-          
-          <div class="carousel-item" id="lewisHamilton">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Lewis Hamilton.avif" alt="lewis hamilton" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="lewisHamilton">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Lewis Hamilton.avif" alt="Lewis Hamilton" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px #FF4500; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Lewis Hamilton</h3>
               <p>Team: Mercedes AMG Petronas</p> 
               <p>Leeftijd: 38</p>
               <p>Zevenvoudig F1-Wereldkampioen</p> 
-              <img src="./Circuits foto's/groot-britannië.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/groot-britannië.png" alt="Britse vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="landoNorris">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Lando Norris.avif" alt="lando norris" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="landoNorris">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Lando Norris.avif" alt="Lando Norris" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Lando Norris</h3>
               <p>Team: McLaren</p>
               <p>Leeftijd: 24</p>
-              <img src="./Circuits foto's/groot-britannië.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/groot-britannië.png" alt="Britse vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="oscarPiastri">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Oscar Piastri.avif" alt="oscar piastri" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="oscarPiastri">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Oscar Piastri.avif" alt="Oscar Piastri" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Oscar Piastri</h3>
               <p>Team: McLaren</p>
               <p>Leeftijd: 22</p>
-              <img src="./Circuits foto's/australie.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/australie.png" alt="Australische vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="fernandoAlonso">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Fernando Alonso.avif" alt="fernando alonso" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="fernandoAlonso">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Fernando Alonso.avif" alt="Fernando Alonso" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Fernando Alonso</h3>
               <p>Team: Aston Martin</p>
               <p>Leeftijd: 42</p>
               <p>Tweevoudig F1-Wereldkampioen</p>
-              <img src="./Circuits foto's/spanje.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/spanje.png" alt="Spaanse vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="lanceStroll">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Lance Stroll.avif" alt="lance stroll" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+          <article class="carousel-item" id="lanceStroll">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Lance Stroll.avif" alt="Lance Stroll" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Lance Stroll</h3>
               <p>Team: Aston Martin</p>
               <p>Leeftijd: 25</p>
-              <img src="./Circuits foto's/canada.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+              <img src="./Circuits foto's/canada.png" alt="Canadese vlag" width="40" height="30">
+            </section>
+          </article>
 
-          <div class="carousel-item" id="pierreGasly">
-            <div class="d-flex justify-content-center">
+          <article class="carousel-item" id="pierreGasly">
+            <figure class="d-flex justify-content-center">
               <img src="./Drivers foto's/Pierre Gasly.avif" alt="pierre gasly" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Pierre Gasly</h3>
               <p>Team: Alpine</p>
               <p>Leeftijd: 27</p>
               <img src="./Circuits foto's/frankrijk.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
-
-          <div class="carousel-item" id="estebanOcon">
-            <div class="d-flex justify-content-center">
+            </section>
+          </article>
+          
+          <article class="carousel-item" id="estebanOcon">
+            <figure class="d-flex justify-content-center">
               <img src="./Drivers foto's/Esteban Ocon.avif" alt="esteban ocon" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Esteban Ocon</h3>
               <p>Team: Alpine</p>
               <p>Leeftijd: 27</p>
               <img src="./Circuits foto's/frankrijk.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+            </section>
+          </article>
 
-          <div class="carousel-item" id="alexAlbon">
-            <div class="d-flex justify-content-center">
+          <article class="carousel-item" id="alexAlbon">
+            <figure class="d-flex justify-content-center">
               <img src="./Drivers foto's/Alexander Albon.avif" alt="alex albon" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Alexander Albon</h3>
               <p>Team: Williams Racing</p>
               <p>Leeftijd: 27</p>
               <img src="./Circuits foto's/thailand.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+            </section>
+          </article>
           
-          <div class="carousel-item" id="loganSargeant">
-            <div class="d-flex justify-content-center">
+          <article class="carousel-item" id="loganSargeant">
+            <figure class="d-flex justify-content-center">
               <img src="./Drivers foto's/Logan Sargeant.avif" alt="logan sargeant" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
               <h3>Logan Sargeant</h3>
-              <p>Team: Williams Racing</p> 
-              <p>Leeftijd: 22</p> 
+              <p>Team: Williams Racing</p>
+              <p>Leeftijd: 22</p>
               <img src="./Circuits foto's/united states.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
-
-          <div class="carousel-item" id="kevinMagnussen">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Kevin Magnussen.avif" alt="kevin magnussen" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
-              <h3>Kevin Magnussen</h3>
-              <p>Team: Haas F1 Team</p> 
-              <p>Leeftijd: 31</p> 
-              <img src="./Circuits foto's/denmark.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
-
-          <div class="carousel-item" id="nicoHulkenberg">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Nico Hulkenberg.avif" alt="nico hulkenberg" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
-              <h3>Nico Hulkenberg</h3>
-              <p>Team: Haas F1 Team</p> 
-              <p>Leeftijd: 36</p> 
-              <img src="./Circuits foto's/duitsland.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
-
-          <div class="carousel-item" id="yukiTsunoda">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Yuki Tsunoda.avif" alt="yuki tsunoda" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
-              <h3>Yuki Tsunoda</h3>
-              <p>Team: Alpha Tauri</p> 
-              <p>Leeftijd: 23</p> 
-              <img src="./Circuits foto's/japan.png" alt="vlag" width="40" height="30" style="border: 1px solid #bd0000;">
-            </div>
-          </div>
-
-          <div class="carousel-item" id="danielRicciardo">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Daniel Ricciardo.avif" alt="daniel ricciardo" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
-              <h3>Daniel Ricciardo</h3>
-              <p>Team: Alpha Tauri</p> 
-              <p>Leeftijd: 34</p>
-              <img src="./Circuits foto's/australie.png" alt="vlag" width="40" height="30"> 
-            </div>
-          </div>
-
-          <div class="carousel-item" id="valtteriBottas">
-            <div class="d-flex justify-content-center">
-              <img src="./Drivers foto's/Valtteri Bottas.avif" alt="valteri bottas" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
-              <h3>Valtteri Bottas</h3>
-              <p>Team: Alfa Romeo</p> 
-              <p>Leeftijd: 34</p> 
-              <img src="./Circuits foto's/finland.png" alt="vlag" width="40" height="30" style="border: 1px solid rgb(4, 128, 210);">
-            </div>
-          </div>
-
+            </section>
+          </article>
           
-          <div class="carousel-item" id="zhouGuanyu">
-            <div class="d-flex justify-content-center">
+          <article class="carousel-item" id="kevinMagnussen">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Kevin Magnussen.avif" alt="kevin magnussen" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px;" class="text-center mt-3">
+              <h3>Kevin Magnussen</h3>
+              <p>Team: Haas F1 Team</p>
+              <p>Leeftijd: 31</p>
+              <img src="./Circuits foto's/denmark.png" alt="vlag" width="40" height="30">
+            </section>
+          </article>
+
+          <article class="carousel-item" id="nicoHulkenberg">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Nico Hulkenberg.avif" alt="nico hulkenberg" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+              <h3>Nico Hulkenberg</h3>
+              <p>Team: Haas F1 Team</p>
+              <p>Leeftijd: 36</p>
+              <img src="./Circuits foto's/duitsland.png" alt="vlag" width="40" height="30">
+            </section>
+          </article>
+          
+          <article class="carousel-item" id="yukiTsunoda">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Yuki Tsunoda.avif" alt="yuki tsunoda" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+              <h3>Yuki Tsunoda</h3>
+              <p>Team: Alpha Tauri</p>
+              <p>Leeftijd: 23</p>
+              <img src="./Circuits foto's/japan.png" alt="vlag" width="40" height="30" style="border: 1px solid #bd0000;">
+            </section>
+          </article>
+
+          <article class="carousel-item" id="danielRicciardo">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Daniel Ricciardo.avif" alt="daniel ricciardo" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+              <h3>Daniel Ricciardo</h3>
+              <p>Team: Alpha Tauri</p>
+              <p>Leeftijd: 34</p>
+              <img src="./Circuits foto's/australie.png" alt="vlag" width="40" height="30">
+            </section>
+          </article>
+          
+          <article class="carousel-item" id="valtteriBottas">
+            <figure class="d-flex justify-content-center">
+              <img src="./Drivers foto's/Valtteri Bottas.avif" alt="valteri bottas" class="d-block mx-auto img-fluid rounded" width="60%">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+              <h3>Valtteri Bottas</h3>
+              <p>Team: Alfa Romeo</p>
+              <p>Leeftijd: 34</p>
+              <img src="./Circuits foto's/finland.png" alt="vlag" width="40" height="30" style="border: 1px solid rgb(4, 128, 210);">
+            </section>
+          </article>
+          
+          <article class="carousel-item" id="zhouGuanyu">
+            <figure class="d-flex justify-content-center">
               <img src="./Drivers foto's/Zhou Guanyu.avif" alt="zhou guanyu" class="d-block mx-auto img-fluid rounded" width="60%">
-            </div>
-            <div style="max-width: 600px; margin: 0 auto; border: 2px  #a9a9ab; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
+            </figure>
+            <section style="max-width: 600px; margin: 0 auto; border: 2px solid #ffffff; padding: 10px; border-radius: 10px; margin-top: 8px; margin-bottom: 150px ;" class="text-center mt-3">
               <h3>Zhou Guanyu</h3>
-              <p>Team: Alfa Romeo</p> 
-              <p>Leeftijd: 24</p> 
+              <p>Team: Alfa Romeo</p>
+              <p>Leeftijd: 24</p>
               <img src="./Circuits foto's/china.png" alt="vlag" width="40" height="30">
-            </div>
-          </div>
+            </section>
+          </article>
+          
+          <style>
+            .carousel-control-prev, .carousel-control-next {
+              top: 30%;
+              transform: translateY(-50%);
+            }
+          </style>
+          
+          <a class="carousel-control-prev" href="#coureursCarousel" role="button" data-slide="prev" style="color: #000000; font-size: 3em; text-decoration: none;">
+            <span class="carousel-control-prev-icon" aria-hidden="true">❮</span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#coureursCarousel" role="button" data-slide="next" style="color: #000000; font-size: 3em; text-decoration: none;">
+            <span class="carousel-control-next-icon" aria-hidden="true">❯</span>
+            <span class="sr-only"></span>
+          </a>
+          
+        </article>
+      </section>
+    </article>
+  </section>
+</main>
 
-        </div>
-
-        <a class="carousel-control-prev" href="#coureursCarousel" role="button" data-slide="prev" style="color: #000000; font-size: 3em; text-decoration: none;">
-          <span class="carousel-control-prev-icon" aria-hidden="true">❮</span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#coureursCarousel" role="button" data-slide="next" style="color: #000000; font-size: 3em; text-decoration: none;">
-          <span class="carousel-control-next-icon" aria-hidden="true">❯</span>
-          <span class="sr-only"></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 <footer class="container-fluid text-center h6 small p-4">&copy; Formule 1 2023</footer>
-
 </body>
 </html>
 

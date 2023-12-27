@@ -1,4 +1,3 @@
-<!-- Het volgende is een HTML-document voor een website over Formule 1 -->
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
@@ -15,163 +14,167 @@
     .navbar-nav .nav-link {
         margin-right: 20px; 
     }
-
     .dropdown-menu a {
         padding: 3px 10px; 
     }
-</style>
+  </style>
 </head>
 <body>
     <!-- Navigatiebalk met behulp van Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
-        <div class="container-fluid">
-          <!-- Logo in de navigatiebalk -->
-          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navigatie-items -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#concept">Concept</a>
-              </li>
-              <!-- Dropdown-menu voor coureurs -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Drivers</a>
-                <ul class="dropdown-menu multi-column" style="width: 310px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <li><a class="dropdown-item" href="./drivers.html">Max Verstappen</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Sergio Perez</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Lewis Hamilton</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Fernando Alonso</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Carlos Sainz</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Charles Leclerc</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Lando Norris</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">George Russell</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Oscar Piastri</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Lance Stroll</a></li>
-                        </div>
-                        <div class="col-md-6" style="border-left: 1px solid #474646;">
-                            <li><a class="dropdown-item" href="./drivers.html">Pierre Gasly</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Esteban Ocon</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Alexander Albon</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Valtteri Bottas</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Nico Hulkenberg</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Zhou Guanyu</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Yuki Tsunoda</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Kevin Magnussen</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Logan Sargeant</a></li>
-                            <li><a class="dropdown-item" href="./drivers.html">Daniel Ricciardo</a></li>
-                        </div>
-                    </div>
-                </ul>
-            </li>
-            <!-- Dropdown-menu voor teams -->
-            <li class="nav-item dropdown">
-                  <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
-                    Teams</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./teams.html#Team 1">Red Bull Racing </a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 2">Mercedes</a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 3">Ferrari </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 4">Aston Martin </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 5">Mclaren </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 6">Alpine </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 7">Williams </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 8">Alfa Romeo </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 9">Haas F1 Team </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 10">Alpha Tauri </a></li>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+          <section class="container-fluid">
+            <!-- Logo in de navigatiebalk -->
+            <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigatie-items -->
+            <section class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#CONCEPT">Concept</a>
+                </li>
+                <!-- Dropdown-menu voor coureurs -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Drivers</a>
+                  <ul class="dropdown-menu multi-column" style="width: 310px;">
+                      <article class="row">
+                          <section class="col-md-6">
+                              <li><a class="dropdown-item" href="./drivers.html">Max Verstappen</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Sergio Perez</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lewis Hamilton</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Fernando Alonso</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Carlos Sainz</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Charles Leclerc</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lando Norris</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">George Russell</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Oscar Piastri</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Lance Stroll</a></li>
+                          </section>
+                          <section class="col-md-6" style="border-left: 1px solid #474646;">
+                              <li><a class="dropdown-item" href="./drivers.html">Pierre Gasly</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Esteban Ocon</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Alexander Albon</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Valtteri Bottas</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Nico Hulkenberg</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Zhou Guanyu</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Yuki Tsunoda</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Kevin Magnussen</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Logan Sargeant</a></li>
+                              <li><a class="dropdown-item" href="./drivers.html">Daniel Ricciardo</a></li>
+                          </section>
+                      </article>
                   </ul>
                 </li>
-
+                <!-- Dropdown-menu voor teams -->
+                <li class="nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
+                      Teams</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./teams.html#Teams">Red Bull Racing </a></li>
+                      <li><a class="dropdown-item" href="./teams.html#Team2">Mercedes</a></li>
+                      <li><a class="dropdown-item" href="./teams.html#Team3">Ferrari </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team4">Aston Martin </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team5">Mclaren </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team6">Alpine </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team7">Williams </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team8">Alfa Romeo </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team9">Haas F1 Team </a></li>
+                      <li><a class="dropdown-item" href="/teams.html#Team10">Alpha Tauri </a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./circuits.html">Circuits</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contact.html">Contact</a>
+                </li>
+              </ul>
+              <!-- Zoekformulier in de navigatiebalk -->
+              <form class="d-flex" role="search" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search" id="searchInput">
+                <button class="btn btn-sm btn-outline-secondary" type="button" onclick="searchFunction()" style="color: rgb(227, 222, 222);">zoeken</button>
+              </form>
+            </section>
+          </section>
+        </nav>
+    </header>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./Contact.html">Contact</a>
-              </li>
-            </ul>
-            <!-- Zoekformulier in de navigatiebalk -->
-            <form class="d-flex" role="search" id="searchForm">
-              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search" id="searchInput">
-              <button class="btn btn-sm btn-outline-secondary" type="button" onclick="searchFunction()" style="color: rgb(227, 222, 222);">zoeken</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- Hoofding van de pagina -->
-      <header class="m-5">  
-          <h1 class="display-3 text-danger text-uppercase fw-bolder fst-italic text-center">Formule 1</h1>
-      </header>
-      <!-- Sectie over het concept van Formule 1 -->
-      <div class="container-fluid bg-dark" id="Concept">
-        <div class="row">
-            <div class="col-4">
-                <img src="./Foto's/LLT foto.jpg" alt="Formule 1" class="img-fluid rounded">
-            </div>
-            <div class="col-8">
-                <div class="d-flex flex-column justify-content-center h-100" id="concept">
-                    <h1 class="text-white mb-4">Wat is Formule 1?</h1>
-                    <p class="text-white">
-                        Formule 1 is een zeer competitieve sport waarin 10 teams, elk met 2 topcoureurs, strijden in krachtige bolides.
-                        F1 is een kostbare en complexe sport vanwege de vele regels en voorschriften waaraan teams en vooral auto's moeten voldoen.
-                        Gedurende het seizoen vinden wereldwijd races plaats op verschillende internationale circuits, bekend als Grands Prix.
-    
-                        Formule 1 is niet alleen een sport, maar ook een spectaculaire mix van menselijke vaardigheden, engineering en intense competitie.
-                        Miljoenen fans over de hele wereld volgen de races met spanning. Het kampioenschap draait om snelheid, behendigheid en strategie,
-                        waarbij teams constant streven naar technologische verbeteringen en tactische voorsprong.
-                    </p>
-                </div>
-            </div>
-        </div>
-      </div>
 
-       <div style="height: 3cm;"></div>
+    <!-- Hoofding van de pagina -->
+  <header class="m-5">  
+      <h1 class="display-3 text-danger text-uppercase fw-bolder fst-italic text-center">Formule 1</h1>
+  </header>
 
-       <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-8">
-                <div class="d-flex flex-column justify-content-center h-100">
-                    <h1 class="text-white mb-4">Energy Recovery System (ERS)</h1>
-                    <p class="text-white">
-                      ERS, of Energy Recovery System, vormt een cruciaal onderdeel van de hybride aandrijflijn in Formule 1-auto's.
-                       Het bestaat uit twee hoofdcomponenten: Kinetic Energy Recovery System en Energy Recovery System - Heat.
-                        KERS herwint kinetische energie bij het vertragen van de auto en vooral bij het remmen, waarbij de opgewekte energie wordt omgezet in elektriciteit 
-                        en opgeslagen in een batterij. Aan de andere kant haalt ERS-H energie uit de hitte van de uitlaatgassen. Deze elektrische 
-                        energie kan vervolgens worden ingezet bij het accelereren, waardoor het totale vermogen van de wagen toeneemt. Het ERS-systeem 
-                        draagt niet alleen bij aan de prestaties van de auto's, maar symboliseert ook de voortdurende inspanningen van de Formule 1 om
-                        technologische vooruitgang te stimuleren en brandstofefficiëntie te bevorderen,
-                       met het oog op potentiële toepassingen in straatauto's. Dus elke keer dat een Formule 1 auto remt, dan verzamelt deze energie
-                       die gebruikt wordt om sneller te accelereren en hogere snelheden te halen.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 text-end">
-                <img src="./Foto's/ERS.jpg" alt="Formule 1" class="img-fluid rounded" width="60%">
-            </div>
-        </div>
-    </div>
+  <!-- Sectie over het concept van Formule 1 -->
+  <section id="Concept" class="container-fluid bg-dark">
+    <section class="row">
+        <article class="col-4">
+            <img src="./Foto's/LLT foto.jpg" alt="Formule 1" class="img-fluid rounded">
+        </article>
+        <article class="col-8">
+            <article class="d-flex flex-column justify-content-center h-100">
+                <h1 class="text-white mb-4" id="CONCEPT">Wat is Formule 1?</h1>
+                <p class="text-white">
+                    Formule 1 is een zeer competitieve sport waarin 10 teams, elk met 2 topcoureurs, strijden in krachtige bolides.
+                    F1 is een kostbare en complexe sport vanwege de vele regels en voorschriften waaraan teams en vooral auto's moeten voldoen.
+                    Gedurende het seizoen vinden wereldwijd races plaats op verschillende internationale circuits, bekend als Grands Prix.
+
+                    Formule 1 is niet alleen een sport, maar ook een spectaculaire mix van menselijke vaardigheden, engineering en intense competitie.
+                    Miljoenen fans over de hele wereld volgen de races met spanning. Het kampioenschap draait om snelheid, behendigheid en strategie,
+                    waarbij teams constant streven naar technologische verbeteringen en tactische voorsprong.
+                </p>
+            </article>
+        </article>
+    </section>
+  </section>
+
+
+  <div style="height: 3cm;"></div>
+
+  <!-- Sectie over het Energy Recovery System (ERS) -->
+  <section class="container-fluid bg-dark">
+    <section class="row">
+        <article class="col-8">
+            <article class="d-flex flex-column justify-content-center h-100">
+                <h1 class="text-white mb-4">Energy Recovery System (ERS)</h1>
+                <p class="text-white">
+                    ERS, of Energy Recovery System, vormt een cruciaal onderdeel van de hybride aandrijflijn in Formule 1-auto's.
+                    Het bestaat uit twee hoofdcomponenten: Kinetic Energy Recovery System en Energy Recovery System - Heat.
+                    KERS herwint kinetische energie bij het vertragen van de auto en vooral bij het remmen, waarbij de opgewekte energie wordt omgezet in elektriciteit 
+                    en opgeslagen in een batterij. Aan de andere kant haalt ERS-H energie uit de hitte van de uitlaatgassen. Deze elektrische 
+                    energie kan vervolgens worden ingezet bij het accelereren, waardoor het totale vermogen van de wagen toeneemt. Het ERS-systeem 
+                    draagt niet alleen bij aan de prestaties van de auto's, maar symboliseert ook de voortdurende inspanningen van de Formule 1 om
+                    technologische vooruitgang te stimuleren en brandstofefficiëntie te bevorderen,
+                    met het oog op potentiële toepassingen in straatauto's. Dus elke keer dat een Formule 1 auto remt, dan verzamelt deze energie
+                    die gebruikt wordt om sneller te accelereren en hogere snelheden te halen.
+                </p>
+            </article>
+        </article>
+        <article class="col-4 text-end">
+            <img src="./Foto's/ERS.jpg" alt="Formule 1" class="img-fluid rounded" width="60%">
+        </article>
+    </section>
+  </section>
 
     <div style="height: 3cm;"></div>
 
-       <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-4">
-                <img src="./Foto's/DRS.jpg" alt="Formule 1" class="img-fluid rounded">
-            </div>
-            <div class="col-8">
-                <div class="d-flex flex-column justify-content-center h-100">
-                    <h1 class="text-white mb-4">Drag Reduction System (DRS)</h1>
-                    <p class="text-white">
+  <!-- Sectie over het Drag Reduction System (DRS) -->
+  <section class="container-fluid bg-dark">
+      <section class="row">
+          <article class="col-4">
+              <img src="./Foto's/DRS.jpg" alt="Formule 1" class="img-fluid rounded">
+          </article>
+          <article class="col-8">
+              <article class="d-flex flex-column justify-content-center h-100">
+                  <h1 class="text-white mb-4">Drag Reduction System (DRS)</h1>
+                  <p class="text-white">
                       DRS, oftewel Drag Reduction System, is een reglementair ingevoerd systeem in de Formule 1 om inhalen te bevorderen.
                       Het wordt doorgaans toegepast op rechte stukken van het circuit. Wanneer een coureur binnen een seconde komt van zijn voorganger
                       en zich in een vooraf bepaalde DRS-zone bevindt, mag hij zijn achtervleugel openklappen. Dit resulteert in een vermindering
@@ -181,90 +184,93 @@
                       DRS heeft als doel het spektakel op de baan te vergroten en meer actie in de races te brengen door
                       coureurs in staat te stellen elkaar gemakkelijker te passeren.
                       Het gebruik van DRS is echter aan strikte regels gebonden om te voorkomen dat het de competitie te veel beïnvloedt.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+                  </p>
+              </article>
+          </article>
+      </section>
+  </section>
  
     <div style="height: 3cm;"></div>
 
-      <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-6">
-                <div class="d-flex flex-column justify-content-center h-100">
-                    <h1 class="text-white mb-4">Banden Compounds</h1>
-                    
-                    <ul class="list-unstyled; text-white"> 
-                      <li ><span style="color: #ff0000;"><strong style="color: #ff0000;">Soft</strong> (rood) : De Zachtste compound. Verslijten snel. Wegen het minst</span></li>
-                      <li><span style="color: rgb(217, 251, 0)"><strong style="color: rgb(217, 251, 0)">Medium</strong> (geel) : Een medium compound.</li>
-                      <li><span class="text-white"><strong>Hard</strong> (wit) : De hardste compound. Gaat lang mee. Wegen het meest </span></li>
-                      <li><span style="color: rgb(9, 218, 9);"><strong style="color: rgb(9, 218, 9);">Intermediate</strong> (groen) : Gebruikt bij natte omstandigheden.</li>
-                      <li><span style="color: rgb(0, 89, 255);"><strong style="color: rgb(0, 81, 255);">Full Wet</strong> (blauw) : De zachtste compound voor natte omstandigheden.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-6 text-end">
-                <img src="./Foto's/tyres.webp" alt="Formule 1" class="img-fluid rounded" width="100%">
-            </div>
-        </div>
-    </div>
+  <!-- Sectie over de Banden Compounds -->
+  <section class="container-fluid bg-dark">
+    <section class="row">
+        <article class="col-6">
+            <article class="d-flex flex-column justify-content-center h-100">
+                <h1 class="text-white mb-4">Banden Compounds</h1>
+                <ul class="list-unstyled text-white">
+                    <li><span style="color: #ff0000;">&bull;</span> <strong style="color: #ff0000;">Soft</strong> : De Zachtste compound. Verslijten snel. Wegen het minst</li>
+                    <li><span style="color: rgb(217, 251, 0);">&bull;</span> <strong style="color: rgb(217, 251, 0);">Medium</strong> : Een medium compound.</li>
+                    <li><span style="color: #fff;">&bull;</span> <strong>Hard</strong> : De hardste compound. Gaat lang mee. Wegen het meest</li>
+                    <li><span style="color: rgb(9, 218, 9);">&bull;</span> <strong style="color: rgb(9, 218, 9);">Intermediate</strong> : Gebruikt bij natte omstandigheden.</li>
+                    <li><span style="color: rgb(0, 89, 255);">&bull;</span> <strong style="color: rgb(0, 81, 255);">Full Wet</strong> : De zachtste compound voor natte omstandigheden.</li>
+                </ul>
+            </article>
+        </article>
+        <article class="col-6 text-end">
+            <img src="./Foto's/tyres.webp" alt="Formule 1" class="img-fluid rounded" width="100%">
+        </article>
+    </section>
+  </section>
 
     <div style="height: 3cm;"></div>
 
-      <div class="container-fluid bg-dark">
-        <div class="row">
-          <div class="col-8">
-              <div class="d-flex flex-column justify-content-center h-100">
-                  <h1 class="text-white mb-4">Waarom Formule 1?</h1>
-                  <p class="text-white">
-                  Als formule 1 fan lijkt het me heel boeiend om er een website over te maken. 
-                  Op deze website wil ik mijn kennis delen over de teams, de coureurs, 
-                  de circuits en de geschiedenis van deze fascinerende sport.
-                  Hierdoor kan ik buiten al mijn kennis ook mijn ervaringen delen en misschien ook andere mensen overhalen om de sport te volgen. 
-                  Ik ben zelf ook al verschillende keren een Grand-prix gaan kijken zoals onder andere de Belgian Grand Prix, op de foto. 
-                  <br> <br>Dit was in Spa-Francorchamps in de Ardennen. Dit is een iconisch circuit in de ogen van de Formule 1.
-                  Maar bovenal is het de onvoorspelbaarheid die elke race uniek maakt, de ongekende momenten van opwinding, 
-                  de rivaliteit tussen teams en coureurs die fans wereldwijd verbindt. 
-                  Als Formule 1-fan maak je deel uit van een wereldwijde gemeenschap die de adrenaline, 
-                  de spanning en de pure passie van de races deelt, waardoor het niet zomaar een sport wordt, 
-                  maar een levensstijl die verder gaat dan de finishlijn.
-                  </p>
-              </div>
-          </div>
-          <div class="col-4 text-end">
-              <img src="./Foto's/foto jezelf.jpg" alt="Formule 1" class="img-fluid rounded" style="width: 55%;">
-          </div>
-      </div>
-  </div>
+        <!-- Hoofdsectie over "Waarom Formule 1?" -->
+  <section class="container-fluid bg-dark">
+    <section class="row">
+        <!-- Linker kolom met tekst -->
+        <article class="col-8">
+            <article class="d-flex flex-column justify-content-center h-100">
+                <h1 class="text-white mb-4">Waarom Formule 1?</h1>
+                <p class="text-white">
+                    Als Formule 1-fan lijkt het me heel boeiend om er een website over te maken. 
+                    Op deze website wil ik mijn kennis delen over de teams, de coureurs, 
+                    de circuits en de geschiedenis van deze fascinerende sport.
+                    Hierdoor kan ik buiten al mijn kennis ook mijn ervaringen delen en misschien ook andere mensen overhalen om de sport te volgen. 
+                    Ik ben zelf ook al verschillende keren een Grand Prix gaan kijken zoals onder andere de Belgian Grand Prix, op de foto. 
+                    <br> <br>Dit was in Spa-Francorchamps in de Ardennen. Dit is een iconisch circuit in de ogen van de Formule 1.
+                    Maar bovenal is het de onvoorspelbaarheid die elke race uniek maakt, de ongekende momenten van opwinding, 
+                    de rivaliteit tussen teams en coureurs die fans wereldwijd verbindt. 
+                    Als Formule 1-fan maak je deel uit van een wereldwijde gemeenschap die de adrenaline, 
+                    de spanning en de pure passie van de races deelt, waardoor het niet zomaar een sport wordt, 
+                    maar een levensstijl die verder gaat dan de finishlijn.
+                </p>
+            </article>
+        </article>
+        <!-- Rechter kolom met afbeelding -->
+        <aside class="col-4 text-end">
+            <img src="./Foto's/foto jezelf.jpg" alt="Formule 1" class="img-fluid rounded" style="width: 55%;">
+        </aside>
+    </section>
+  </section>
 
   <div style="height: 1.5cm;"></div>
 
-  <div class="container-fluid bg-dark" style="height: 500px;">
+  <!-- Hoofdsectie over "Locatie" -->
+  <section class="container-fluid bg-dark" style="height: 500px;">
     <h1 class="text-white mt-4 mb-4 text-center">Locatie</h1>
-    <div id="map" style="height: 400px;"></div>
-</div>
+    <!-- Kaartsectie -->
+    <article id="map" style="height: 400px;"></article>
+  </section>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<script>
-    var spaCoords = [50.4372, 5.9714]; //Coördinaten van Spa-Francorchamps
+  <script>
+      var spaCoords = [50.4372, 5.9714]; //Coördinaten van Spa-Francorchamps
 
-    var map = L.map('map').setView(spaCoords, 15);
+      var map = L.map('map').setView(spaCoords, 15);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
-    L.marker(spaCoords).addTo(map)
-        .bindPopup('Circuit de Spa-Francorchamps')
-        .openPopup();
-</script>
+      L.marker(spaCoords).addTo(map)
+          .bindPopup('Circuit de Spa-Francorchamps')
+          .openPopup();
+  </script>
 
 <!-- Voetnoot van de pagina -->
 <footer class="container-fluid text-center h6 small p-4">&copy; Formule 1 2023</footer>
 </body>
 </html> 
-
-

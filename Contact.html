@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -21,36 +16,38 @@
     .navbar-nav .nav-link {
         margin-right: 20px; 
     }
-
     .dropdown-menu a {
         padding: 3px 10px; 
     }
 </style>
 </head>
 <body>
+ <!-- Navigatiebalk met behulp van Bootstrap -->
+ <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75">
-          </a>
+        <section class="container-fluid">
+          <!-- Logo in de navigatiebalk -->
+          <a class="navbar-brand" href="#"><img src="./Foto's/f1 logo.avif" alt="F1-logo" width="100" height="75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigatie-items -->
+          <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html" >Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./index.html#concept">Concept</a>
+                <a class="nav-link" href="./index.html#CONCEPT">Concept</a>
               </li>
-              
+              <!-- Dropdown-menu voor coureurs -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="./drivers.html" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Drivers</a>
                 <ul class="dropdown-menu multi-column" style="width: 310px;">
-                    <div class="row">
-                        <div class="col-md-6">
+                    <article class="row">
+                        <section class="col-md-6">
                             <li><a class="dropdown-item" href="./drivers.html">Max Verstappen</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Sergio Perez</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Lewis Hamilton</a></li>
@@ -61,8 +58,8 @@
                             <li><a class="dropdown-item" href="./drivers.html">George Russell</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Oscar Piastri</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Lance Stroll</a></li>
-                        </div>
-                        <div class="col-md-6" style="border-left: 1px solid #474646;">
+                        </section>
+                        <section class="col-md-6" style="border-left: 1px solid #474646;">
                             <li><a class="dropdown-item" href="./drivers.html">Pierre Gasly</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Esteban Ocon</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Alexander Albon</a></li>
@@ -73,117 +70,123 @@
                             <li><a class="dropdown-item" href="./drivers.html">Kevin Magnussen</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Logan Sargeant</a></li>
                             <li><a class="dropdown-item" href="./drivers.html">Daniel Ricciardo</a></li>
-                        </div>
-                    </div>
+                        </section>
+                    </article>
                 </ul>
-            </li>
-
-            <li class="nav-item dropdown">
+              </li>
+              <!-- Dropdown-menu voor teams -->
+              <li class="nav-item dropdown">
                   <a class=" nav-link dropdown-toggle" href="./teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_blank">
                     Teams</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./teams.html#Team 1">Red Bull Racing </a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 2">Mercedes</a></li>
-                    <li><a class="dropdown-item" href="./teams.html#Team 3">Ferrari </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 4">Aston Martin </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 5">Mclaren </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 6">Alpine </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 7">Williams </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 8">Alfa Romeo </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 9">Haas F1 Team </a></li>
-                    <li><a class="dropdown-item" href="/teams.html#Team 10">Alpha Tauri </a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Teams">Red Bull Racing </a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team2">Mercedes</a></li>
+                    <li><a class="dropdown-item" href="./teams.html#Team3">Ferrari </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team4">Aston Martin </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team5">Mclaren </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team6">Alpine </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team7">Williams </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team8">Alfa Romeo </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team9">Haas F1 Team </a></li>
+                    <li><a class="dropdown-item" href="/teams.html#Team10">Alpha Tauri </a></li>
                   </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./circuits.html">Circuits</a>
-                </li>
-
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./circuits.html">Circuits</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="./Contact.html">Contact</a>
               </li>
             </ul>
-
+            <!-- Zoekformulier in de navigatiebalk -->
             <form class="d-flex" role="search" id="searchForm">
               <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search" id="searchInput">
               <button class="btn btn-sm btn-outline-secondary" type="button" onclick="searchFunction()" style="color: rgb(227, 222, 222);">zoeken</button>
             </form>
-          </div>
-        </div>
+          </section>
+        </section>
       </nav>
+  </header>
 
-      <header class="m-3">  
-        <h1 class="display-6 text-danger text-uppercase fw-bolder fst-italic text-center">Contact</h1>
-    </header>
+ <header class="m-3">  
+    <h1 class="display-6 text-danger text-uppercase fw-bolder fst-italic text-center">Contact</h1>
+ </header>
 
-    <div class="container-fluid bg-dark" id="contact">
-        <div class="row">
-            <div class="col-6">
-                <h2 class="text-white mb-4">Contacteer de Admin (Jan Vos)</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="adminFirstName" class="form-label text-white">Voornaam</label>
-                        <input type="text" class="form-control" id="adminFirstName" placeholder="Voer uw voornaam in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="adminLastName" class="form-label text-white">Achternaam</label>
-                        <input type="text" class="form-control" id="adminLastName" placeholder="Voer uw achternaam in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="adminEmail" class="form-label text-white">E-mailadres</label>
-                        <input type="email" class="form-control" id="adminEmail" placeholder="Voer uw e-mailadres in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="adminPhone" class="form-label text-white">Telefoonnummer</label>
-                        <input type="tel" class="form-control" id="adminPhone" placeholder="Voer uw telefoonnummer in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="adminMessage" class="form-label text-white">Bericht</label>
-                        <textarea class="form-control" id="adminMessage" rows="4" placeholder="Schrijf hier uw bericht" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-4">Verstuur bericht</button>
-                </form>
-            </div>
-            <div class="col-6">
-                <h2 class="text-white mb-4">Contacteer de Webdesigner (Mohamed Barich)</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="designerFirstName" class="form-label text-white">Voornaam</label>
-                        <input type="text" class="form-control" id="designerFirstName" placeholder="Voer uw voornaam in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="designerLastName" class="form-label text-white">Achternaam</label>
-                        <input type="text" class="form-control" id="designerLastName" placeholder="Voer uw achternaam in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="designerEmail" class="form-label text-white">E-mailadres</label>
-                        <input type="email" class="form-control" id="designerEmail" placeholder="Voer uw e-mailadres in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="designerPhone" class="form-label text-white">Telefoonnummer</label>
-                        <input type="tel" class="form-control" id="designerPhone" placeholder="Voer uw telefoonnummer in" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="designerMessage" class="form-label text-white">Bericht</label>
-                        <textarea class="form-control" id="designerMessage" rows="4" placeholder="Schrijf hier uw bericht" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Verstuur bericht</button>
-                </form>
-            </div>
-        </div>
-    </div>
+ <section class="container-fluid bg-dark" id="contact">
+    <section class="row">
+        <article class="col-6">
+            <h2 class="text-white mb-4">Contacteer de Admin (Jan Vos)</h2>
+            <form>
+                <fieldset>
+                    <label for="adminFirstName" class="form-label text-white">Voornaam</label>
+                    <input type="text" class="form-control" id="adminFirstName" placeholder="Voer uw voornaam in" required>
+
+                    <label for="adminLastName" class="form-label text-white">Achternaam</label>
+                    <input type="text" class="form-control" id="adminLastName" placeholder="Voer uw achternaam in" required>
+
+                    <label for="adminEmail" class="form-label text-white">E-mailadres</label>
+                    <input type="email" class="form-control" id="adminEmail" placeholder="Voer uw e-mailadres in" required>
+
+                    <label for="adminPhone" class="form-label text-white">Telefoonnummer</label>
+                    <input type="tel" class="form-control" id="adminPhone" placeholder="Voer uw telefoonnummer in" required>
+                </fieldset>
+
+                <div style="height: 0.5cm;"></div>
+
+                <fieldset>    
+                    <label for="adminMessage" class="form-label text-white">Bericht</label>
+                    <textarea class="form-control" id="adminMessage" rows="4" placeholder="Schrijf hier uw bericht" required></textarea>
+                </fieldset>
+
+                <div style="height: 1cm;"></div>
+
+                <button type="submit" class="btn btn-primary mb-4">Verstuur bericht</button>
+            </form>
+        </article>
+
+        <article class="col-6">
+            <h2 class="text-white mb-4">Contacteer de Webdesigner (Mohamed Barich)</h2>
+            <form>
+                <fieldset>
+                    <label for="designerFirstName" class="form-label text-white">Voornaam</label>
+                    <input type="text" class="form-control" id="designerFirstName" placeholder="Voer uw voornaam in" required>
+
+                    <label for="designerLastName" class="form-label text-white">Achternaam</label>
+                    <input type="text" class="form-control" id="designerLastName" placeholder="Voer uw achternaam in" required>
+
+                    <label for="designerEmail" class="form-label text-white">E-mailadres</label>
+                    <input type="email" class="form-control" id="designerEmail" placeholder="Voer uw e-mailadres in" required>
+
+                    <label for="designerPhone" class="form-label text-white">Telefoonnummer</label>
+                    <input type="tel" class="form-control" id="designerPhone" placeholder="Voer uw telefoonnummer in" required>
+                </fieldset>
+
+                <div style="height: 0.5cm;"></div>
+
+                <fieldset>
+                    <label for="designerMessage" class="form-label text-white">Bericht</label>
+                    <textarea class="form-control" id="designerMessage" rows="4" placeholder="Schrijf hier uw bericht" required></textarea>
+                </fieldset>
+
+                <div style="height: 1cm;"></div>
+
+                <button type="submit" class="btn btn-primary">Verstuur bericht</button>
+            </form>
+        </article>
+    </section>
+</section>
 
     <div style="height: 0.5cm;"></div>
 
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-12">
+    <section class="container-fluid bg-dark">
+        <header class="row">
+            <article class="col-12">
                 <h2 class="text-white mb-4">Locatie</h2>
-                <div id="map" style="height: 400px;"></div>
-            </div>
-        </div>
-    </div>
-    
+                <figure id="map" style="height: 400px;"></figure>
+            </article>
+        </header>
+    </section>
+     
     <script>
         // Coördinaten van de marker
         var markerCoords = [51.23256450552813, 4.405060110321857];
@@ -202,29 +205,21 @@
     
     <div class="container-fluid bg-dark" style="height: 1cm;"></div>
 
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-12 text-center">
+    <section class="container-fluid bg-dark">
+        <header class="row">
+            <article class="col-12 text-center">
                 <h2 class="text-white mt-4 mb-4">Volg ons op sociale media!</h2>
-                <div style="margin-bottom: 25px;">
+                <p style="margin-bottom: 25px;">
                     <a href="https://www.youtube.com/" target="_blank" class="text-white me-4" style="font-size: 2em;"><i class="bi bi-youtube"></i></a>
                     <a href="https://www.instagram.com/" target="_blank" class="text-white me-4" style="font-size: 2em;"><i class="bi bi-instagram"></i></a>
                     <a href="https://twitter.com/" target="_blank" class="text-white me-4" style="font-size: 2em;"><i class="bi bi-twitter"></i></a>
                     <a href="https://www.facebook.com/" target="_blank" class="text-white" style="font-size: 2em;"><i class="bi bi-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+                </p>
+            </article>
+        </header>
+    </section>
     
-    
-
     <footer class="container-fluid text-center h6 small p-2">&copy; Formule 1 2023</footer>
-
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
